@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    font: 62.5%;
+}
+
+body {
+    width: 100%;
+    background-color: rgb(229, 241, 254);
+}
+
+header {
+    width: 10rem;
+    margin: 0.5rem auto;
+    text-align: center;
+    background-color: rgb(61, 140, 251);
+    color: rgb(229, 241, 254);
+    border-radius: 0.2rem;
+    padding: 1rem;
+    font-family: 'Lucida Sans';
+    font-size: larger;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.4rem;
+    width: 30rem;
+    max-width: 90%;
+    height: 85vh;
+    margin: 1.5rem auto 0 auto;
+    background-color: rgb(61, 140, 251);
+    padding: 0.3rem;
+}
+
+#adder {
+    display: flex;
+    justify-content: center;
+    width: 40rem;
+    max-width: 90%;
+    margin: 1.5rem auto;
+}
+
+input {
+    width: 25.4rem;
+    max-width: 70%;
+    min-height: 5vh;
+    height: fit-content;
+    margin: 0.1rem;
+    border-radius: 0.2rem;
+    outline: none;
+    border: none;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.addButton {
+    width: 2rem;
+    height: 5vh;
+    margin: 0.1rem;
+    border-radius: 0.2rem;
+    border: none;
+    background-color: white;
+}
+
+.todoContainer {
+    display: flex;
+    width: 40rem;
+    max-width: 90%;
+    height: fit-content;
+    margin: 0.3rem auto;
+    justify-content: center;
+}
+
+.newTodo {
+    width: 25.4rem;
+    max-width: 70%;
+    height: fit-content;
+    min-height: 5vh;
+    margin: auto 0.1rem;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    text-align: center;
+}
+
+.todoButtons {
+    width: 2rem;
+    height: 5vh;
+    margin: auto 0.1rem;
+    padding: 0.1rem;
+    border-radius: 0.2rem;
+    border: none;
+}
+
+#todoDiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    margin: 1.5rem auto;
+}
