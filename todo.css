@@ -68,6 +68,7 @@ input {
     border-radius: 0.2rem;
     border: none;
     background-color: white;
+    font-size: 1.2rem;
 }
 
 .todoContainer {
@@ -88,6 +89,8 @@ input {
     padding: 0.5rem;
     border-radius: 0.2rem;
     text-align: center;
+    font-size: 0.9rem;
+    font-family: calibri;
 }
 
 .todoButtons {

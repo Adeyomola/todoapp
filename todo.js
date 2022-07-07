@@ -73,8 +73,9 @@ addButton.addEventListener("click", () => {
   });
   //   deletes all todo items
   allDelete.addEventListener("click", () => {
-    while (todoDiv.lastChild) {
-      todoDiv.removeChild(todoDiv.lastChild);
+    while (todoDiv.lastElementChild) {
+      todoDiv.removeChild(todoDiv.lastElementChild);
+      break;
     }
   });
 });
