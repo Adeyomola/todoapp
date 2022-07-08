@@ -13,18 +13,18 @@ html {
 
 body {
     width: 100%;
-    background-color: rgb(229, 241, 254);
+    background-color: white;
 }
 
 header {
     width: 10rem;
-    margin: 0.5rem auto;
+    margin: 0.9rem auto;
     text-align: center;
-    background-color: rgb(61, 140, 251);
-    color: rgb(229, 241, 254);
+    background-color: #282828;
+    color: rgb(198, 198, 198);
     border-radius: 0.2rem;
     padding: 1rem;
-    font-family: 'Lucida Sans';
+    font-family: 'calibri';
     font-size: larger;
 }
 
@@ -35,8 +35,8 @@ main {
     width: 30rem;
     max-width: 90%;
     height: 85vh;
-    margin: 1.5rem auto 0 auto;
-    background-color: rgb(61, 140, 251);
+    margin: 1rem auto 0 auto;
+    background-color: #282828;
     padding: 0.3rem;
 }
 

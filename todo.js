@@ -46,9 +46,9 @@ addButton.addEventListener("click", () => {
     if (todoDiv.childNodes.length > 10) return; //condition that ensures user cannot create more than 10 todo items
     // condition that gives even-number todo items a different color from the odd-number todo items
     if (todoDiv.childNodes.length % 2 == 0) {
-      newTodo.style.backgroundColor = "rgb(186, 229, 255)";
-      doneButton.style.backgroundColor = "rgb(186, 229, 255)";
-      deleteButton.style.backgroundColor = "rgb(186, 229, 255)";
+      newTodo.style.backgroundColor = "rgb(198, 198, 198)";
+      doneButton.style.backgroundColor = "rgb(198, 198, 198)";
+      deleteButton.style.backgroundColor = "rgb(198, 198, 198)";
       checkMark.style.filter = "invert(100%)";
       binIcon.style.filter = "invert(100%)";
     } else {
