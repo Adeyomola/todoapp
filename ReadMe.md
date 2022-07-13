@@ -1,0 +1,2 @@
+Here we have a todo App that can take up to 10 todo items at once.
+This app can also save the user's previous 10 todo items. However, as new todo items are entered, they replace the old ones one by one.

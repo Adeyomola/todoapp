@@ -4,8 +4,13 @@ const allDelete = document.getElementById("allDelete");
 const todoInput = document.getElementById("todoInput");
 const todoDiv = document.getElementById("todoDiv");
 
+let count = 0;
+let date = new Date();
+let stringDate = date.toDateString();
+
 // add event listener to the add button
 addButton.addEventListener("click", () => {
+  count++;
   // creating elements for the todo items
   const todoContainer = document.createElement("div");
   const newTodo = document.createElement("p");
@@ -61,21 +66,29 @@ addButton.addEventListener("click", () => {
     todoContainer.appendChild(doneButton);
     todoContainer.appendChild(deleteButton);
     todoDiv.appendChild(todoContainer);
+    // storing todo items to local storage
+    const todoStored = JSON.parse(localStorage.getItem("todo")) || [];
+    const todoItem = {
+      date: stringDate,
+      index: count,
+      todo: newTodo.innerText,
+    };
+    todoStored.unshift(todoItem);
+    todoStored.splice(10);
+    localStorage.setItem("todo", JSON.stringify(todoStored));
+    //  removes todoDiv and its content
+    deleteButton.addEventListener("click", () => {
+      todoDiv.removeChild(todoContainer);
+    });
+    // runs a line through the todo text
+    doneButton.addEventListener("click", () => {
+      newTodo.style.textDecoration = "line-through";
+    });
+    //   deletes all todo items
+    allDelete.addEventListener("click", () => {
+      if (todoDiv.lastElementChild) {
+        todoDiv.removeChild(todoDiv.lastElementChild);
+      }
+    });
   })();
-
-  //  removes todoDiv and its content
-  deleteButton.addEventListener("click", () => {
-    todoDiv.removeChild(todoContainer);
-  });
-  // runs a line through the todo text
-  doneButton.addEventListener("click", () => {
-    newTodo.style.textDecoration = "line-through";
-  });
-  //   deletes all todo items
-  allDelete.addEventListener("click", () => {
-    while (todoDiv.lastElementChild) {
-      todoDiv.removeChild(todoDiv.lastElementChild);
-      break;
-    }
-  });
 });
